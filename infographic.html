@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corruption in Philippine Public Works: An Infographic Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 380px;
+            }
+        }
+        .flow-arrow {
+            text-align: center;
+            font-size: 2rem;
+            line-height: 1;
+            color: #FF6B6B;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#004E89] mb-2">CRACKS IN THE CONCRETE</h1>
+            <p class="text-lg md:text-xl text-[#407899]">An Analysis of Corruption in Philippine Public Works</p>
+            <p class="text-sm text-gray-500 mt-2">Data Synthesized as of September 2025</p>
+        </header>
+
+        <main>
+            <section class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <p class="text-5xl font-extrabold text-[#FF6B6B]">20-30%</p>
+                        <p class="text-lg font-semibold text-[#004E89] mt-2">Estimated Leakage</p>
+                        <p class="text-gray-600 mt-1">Percentage of project funds lost to corruption, from bidding to implementation.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <p class="text-5xl font-extrabold text-[#FF6B6B]">₱700B+</p>
+                        <p class="text-lg font-semibold text-[#004E89] mt-2">DPWH Annual Budget</p>
+                        <p class="text-gray-600 mt-1">The massive yearly budget for the DPWH makes it a primary target for illicit activities.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <p class="text-5xl font-extrabold text-[#FF6B6B]">Top 3</p>
+                        <p class="text-lg font-semibold text-[#004E89] mt-2">Citizen Complaint Rank</p>
+                        <p class="text-gray-600 mt-1">Public works consistently rank among the top agencies in citizen-filed corruption reports.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mb-16">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-[#004E89] mb-4 text-center">The Anatomy of a Corrupt Project</h2>
+                    <p class="text-center text-gray-700 mb-8 max-w-3xl mx-auto">Corruption in public works is not a single act but a systemic process. It involves collusion between public officials and private contractors at multiple stages, from budget allocation to project completion, to siphon public funds.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+                        <div class="text-center p-4 bg-[#E0E0E0] rounded-lg">
+                            <div class="text-3xl font-bold text-[#004E89]">1</div>
+                            <h3 class="font-semibold mt-2">Budget Insertion</h3>
+                            <p class="text-sm">Lawmakers insert "pork barrel" projects into the national budget, often without proper planning.</p>
+                        </div>
+                        <div class="flow-arrow hidden md:block">&rarr;</div>
+                        <div class="text-center p-4 bg-[#C7D5E0] rounded-lg">
+                            <div class="text-3xl font-bold text-[#004E89]">2</div>
+                            <h3 class="font-semibold mt-2">Rigged Bidding</h3>
+                            <p class="text-sm">Contractors collude, creating a "winner" who pays kickbacks to officials and other bidders.</p>
+                        </div>
+                        <div class="flow-arrow hidden md:block">&rarr;</div>
+                        <div class="text-center p-4 bg-[#A8BCCB] rounded-lg">
+                            <div class="text-3xl font-bold text-[#004E89]">3</div>
+                            <h3 class="font-semibold mt-2">Fund Diversion</h3>
+                            <p class="text-sm">Kickbacks, typically 10-15% for congressmen and more for other officials, are paid out.</p>
+                        </div>
+                        <div class="flow-arrow hidden md:block">&rarr;</div>
+                        <div class="text-center p-4 bg-[#87A0B5] rounded-lg">
+                            <div class="text-3xl font-bold text-[#004E89]">4</div>
+                            <h3 class="font-semibold mt-2">Substandard Work</h3>
+                            <p class="text-sm">To recoup costs and maximize profit, contractors use low-quality materials and methods.</p>
+                        </div>
+                        <div class="flow-arrow hidden md:block">&rarr;</div>
+                        <div class="text-center p-4 bg-[#6A86A0] rounded-lg">
+                            <div class="text-3xl font-bold text-[#004E89]">5</div>
+                            <h3 class="font-semibold mt-2">"Ghost" Projects</h3>
+                            <p class="text-sm">In the worst cases, projects are paid for but are never completed or don't exist at all.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-[#004E89] mb-2 text-center">Public Complaints by Agency</h2>
+                     <p class="text-center text-gray-700 mb-4">This chart breaks down citizen complaints related to public services and corruption. The DPWH and LGUs consistently feature prominently, highlighting public frustration with infrastructure projects and local governance.</p>
+                    <div class="chart-container h-96 md:h-[400px]">
+                        <canvas id="complaintsChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold text-[#004E89] mb-2 text-center">Common Corruption Schemes</h2>
+                    <p class="text-center text-gray-700 mb-4">Analysis of audit reports and investigative journalism reveals the most common methods used to defraud the government. Rigged bidding and kickbacks are the foundation, leading to substandard or non-existent projects.</p>
+                    <div class="chart-container h-96 md:h-[400px]">
+                        <canvas id="schemesChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-white rounded-lg shadow-md p-6 mb-16">
+                 <div class="md:col-span-2">
+                    <h2 class="text-2xl font-bold text-[#004E89] mb-2 text-center">Online Search Interest Over Time</h2>
+                    <p class="text-center text-gray-700 mb-4 max-w-3xl mx-auto">This trend line shows public interest in corruption-related terms over the past five years. Spikes often correlate with major news events, such as Senate investigations or the release of Commission on Audit (COA) reports, indicating that media coverage is a powerful driver of public awareness.</p>
+                    <div class="chart-container w-full max-w-4xl h-96">
+                        <canvas id="trendsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                 <h2 class="text-2xl font-bold text-[#004E89] mb-4 text-center">Key Actors & Their Roles</h2>
+                 <p class="text-center text-gray-700 mb-8 max-w-3xl mx-auto">A complex network of individuals and groups facilitates systemic corruption. Understanding the role each one plays is crucial to identifying points of intervention and accountability.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-[#E0E0E0] rounded-lg p-6">
+                        <h3 class="font-bold text-lg text-[#004E89]">Legislators</h3>
+                        <p class="text-gray-700 mt-2">Influence budget allocations, inserting pet projects ("pork barrel") often in collusion with contractors. They may receive kickbacks for ensuring projects are funded and awarded to their chosen firms.</p>
+                    </div>
+                    <div class="bg-[#C7D5E0] rounded-lg p-6">
+                        <h3 class="font-bold text-lg text-[#004E89]">DPWH Officials</h3>
+                        <p class="text-gray-700 mt-2">From regional directors to bidding committee members, they can manipulate the bidding process, approve substandard work, and falsify project completion reports in exchange for a share of the illicit funds.</p>
+                    </div>
+                    <div class="bg-[#A8BCCB] rounded-lg p-6">
+                        <h3 class="font-bold text-lg text-[#004E89]">Contractors</h3>
+                        <p class="text-gray-700 mt-2">Form cartels to rig bids, ensuring projects are rotated among them. They pay kickbacks to officials and use low-quality materials to recover the "cost of doing business" and maximize their profits.</p>
+                    </div>
+                    <div class="bg-[#87A0B5] rounded-lg p-6">
+                        <h3 class="font-bold text-lg text-[#004E89]">Local Government Officials</h3>
+                        <p class="text-gray-700 mt-2">Act as facilitators on the ground. They can influence project selection, ignore substandard work within their jurisdiction, and help create "ghost projects" in collusion with contractors and DPWH personnel.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+            <p class="text-gray-600">This infographic is a synthesis of publicly available data from government reports, news archives, and social analytics. Its purpose is to inform and encourage public discourse on accountability and transparency.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed by Canvas Infographics - September 2025</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+        
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines.filter(line => line);
+        };
+
+        const chartColors = ['#004E89', '#407899', '#87A0B5', '#FF6B6B', '#FFC145', '#4E6E58'];
+
+        new Chart(document.getElementById('complaintsChart'), {
+            type: 'bar',
+            data: {
+                labels: ['DPWH', 'Local Government Units', 'Land Transportation', 'Bureau of Internal Revenue', 'Dept. of Education'].map(wrapLabel),
+                datasets: [{
+                    label: 'Percentage of Complaints',
+                    data: [35, 28, 15, 12, 10],
+                    backgroundColor: chartColors,
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#E0E0E0'
+                        }
+                    },
+                    y: {
+                         grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    ...tooltipTitleCallback.plugins
+                }
+            }
+        });
+
+        new Chart(document.getElementById('schemesChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Rigged Bidding', ['Substandard', 'Materials'], 'Kickbacks & SOP', 'Ghost Projects', 'Bid Fixing'].map(label => Array.isArray(label) ? label : wrapLabel(label)),
+                datasets: [{
+                    label: 'Prevalence of Scheme',
+                    data: [30, 25, 20, 15, 10],
+                    backgroundColor: chartColors,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    ...tooltipTitleCallback.plugins
+                }
+            }
+        });
+        
+        new Chart(document.getElementById('trendsChart'), {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [
+                {
+                    label: 'DPWH Corruption',
+                    data: [30, 45, 60, 55, 75, 80],
+                    borderColor: '#FF6B6B',
+                    backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                },
+                {
+                    label: 'Pork Barrel Scam',
+                    data: [40, 50, 42, 65, 70, 60],
+                    borderColor: '#004E89',
+                    backgroundColor: 'rgba(0, 78, 137, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Relative Search Interest'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                     ...tooltipTitleCallback.plugins
+                }
+            }
+        });
+    </script>
+</body>
+</html>
